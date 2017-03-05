@@ -1,13 +1,9 @@
 package Factory;
 
-import Dataprovider.ConfigDataProvider;
-import Dataprovider.ExcelDataProvider;
+import DataProvider.ConfigDataProvider;
+import DataProvider.ExcelDataProvider;
 
-//import Applicationpages.ExcelDataProvider;
-//import Dataprovider.ConfigDataProvider;
 
-//import dataProvider.ConfigDataProvider;
-//import dataProvider.ExcelDataProvider;
 
 public class DataProviderFactory {
 	

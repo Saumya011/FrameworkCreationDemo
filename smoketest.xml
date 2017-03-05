@@ -3,7 +3,8 @@
 <suite name="Suite">
   <test name="Test">
     <classes>
-      <class name="Testcases.VerifyLoginPage"/>
+      <class name="TestCase.VerifyHomePage"/>
+      <class name="TestCase.VerifyLoginPage"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

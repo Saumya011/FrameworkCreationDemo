@@ -1,4 +1,4 @@
-package Testcases;
+package TestCase;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;
@@ -7,12 +7,11 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
-import Applicationpages.HomePage;
-import Applicationpages.LogInPage;
+import ApplicationPages.HomePage;
 import Factory.BrowserFactory;
 import Factory.DataProviderFactory;
 
-public class VerifyLoginPage {
+public class VerifyHomePage {
 	
 	  
 	WebDriver driver;
@@ -22,11 +21,11 @@ public class VerifyLoginPage {
 		
         driver = BrowserFactory.getBrowser("Firefox");
 		
-		driver.get(DataProviderFactory.getConfig().getApplicationURL());
+		driver.get(DataProviderFactory.getConfig().geturlPath());
 	}
 	
 	@Test
-	public void testLoginPage(){
+	public void testHomePage(){
 		
 		HomePage home = PageFactory.initElements(driver, HomePage.class);
 		
@@ -34,13 +33,6 @@ public class VerifyLoginPage {
 		
 		Assert.assertTrue(title.contains("Avactis Demo Store"));
 		
-		home.clickOnLoginLink();
-		
-		LogInPage login = PageFactory.initElements(driver, LogInPage.class);
-		
-		login.loginApplication(DataProviderFactory.getExcel().getData(0, 1, 0),DataProviderFactory.getExcel().getData(0, 1, 1));
-		
-		login.verifyDashboardTitle();
 	}
 	
 	
