@@ -19,7 +19,7 @@ public class VerifyHomePage {
 	@BeforeMethod
 	public void setUp(){
 		
-        driver = BrowserFactory.getBrowser("Chrome");
+        driver = BrowserFactory.getBrowser("Firefox");
 		
 		driver.get(DataProviderFactory.getConfig().getApplicationURL());
 	}
