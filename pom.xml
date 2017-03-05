@@ -51,7 +51,7 @@
 <configuration>
  
 <suiteXmlFiles>
-<suiteXmlFile>${suiteXmlFile}</suiteXmlFile>
+<suiteXmlFile>login.xml</suiteXmlFile>
 </suiteXmlFiles>
  
 </configuration>
